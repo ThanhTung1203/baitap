@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<input type="text" id="scr">
+<button onclick="inp('1')" >1</button>
+<button onclick="inp('2')" >2</button>
+<button onclick="inp('3')" >3</button>
+<button onclick="inp('+')" >+</button>
+<button onclick="cal()">=</button>
+<button onclick="inp('*')">*</button>
+<button onclick="inp('/')">/</button>
+<button onclick="clearman()">C</button>
+
+<script >
+    function inp(x){
+ document.getElementById('scr').value += x;
+    }
+    function cal(){
+        document.getElementById('scr').value = eval(document.getElementById('scr').value);
+
+
+}
+    function clearman() {
+        document.getElementById('scr').value = '';
+    }
+    function erro(x) {
+
+    }
+</script>
+</body>
+</html>

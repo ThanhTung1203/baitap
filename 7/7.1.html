@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>    }
+</style>
+<body>
+<table >
+    <tr>
+        <td>số tiền</td>
+        <td>từ</td>
+
+        <td>đến</td>
+    <tr>
+    <td><input type="number" id="so"></td>
+    <td>
+        <select name="quốc gia" id="tu">
+        <option value="1">VND</option>
+        <option value="23000">USA</option>
+        <option value="18">KR</option>
+        </select>
+    </td>
+
+    <td>
+        <select id="thanh">
+            <option value="1">VND</option>
+            <option  value="23000">USD</option>
+            <option value="18">KR</option>
+
+        </select>
+    </td>
+    <td>
+            <button onclick="doitien()">đổi tiền</button>
+    </td>
+
+</tr>
+
+</table>
+<script>
+function doitien(){
+    let t = document.getElementById("tu").value;
+    let t1 = document.getElementById('thanh').value;
+    let s = document.getElementById("so").value;
+    document.write(s*t/t1)
+}
+
+</script>
+</body>
+</html>
